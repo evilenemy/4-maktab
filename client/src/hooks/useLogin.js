@@ -10,14 +10,15 @@ export const useLogin = () => {
     setIsLoading(true);
     setError(null);
 
+    const data = new FormData();
+    data.append("login", login_);
+    data.append("password", password);
+
     const response = await fetch(api + "/users/login", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ login: login_, password }),
+      body: data,
     });
     const json = await response.json();
-
-    console.log(response);
 
     if (!response.ok) {
       setIsLoading(false);

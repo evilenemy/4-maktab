@@ -67,14 +67,26 @@ nav.navbar {
   margin-right: 100px;
 }
 
-.home,
-.about {
+.home .main {
   width: 100%;
   height: 100vh;
+  background: fixed;
   background: url("https://wallpaperaccess.com/full/2029165.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .main-center {
+  background: #000;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .login {
