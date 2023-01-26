@@ -68,3 +68,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### `figma version` link
+[https://www.figma.com/file/Lw15uGj9LSpu38hO9N88L5/School-Crafty---responsive%C2%A0website-template%C2%A0download%C2%A0html%C2%A0with-css-for-school-(Community)?node-id=2689%3A4227&t=KmhNhB6nNJ014Jtc-0](figma.com)
