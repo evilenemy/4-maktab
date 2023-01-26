@@ -10,7 +10,7 @@ const Home = ({ api }) => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
             iusto!
           </p>
-          <div>
+          <div className="main-buttons">
             <button className="main-about">Biz haqimizda</button>
             <button className="main-contact">Aloqa</button>
           </div>

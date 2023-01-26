@@ -89,14 +89,36 @@ nav.navbar {
   justify-content: flex-start;
 }
 
-.main-center .main-about {
+.main-center .main-buttons {
+  width: 70%;
   padding: 10px;
-  background-color: #ff7b52;
-  color: #ffefef;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.main-center .main-about {
+  padding: 15px 40px;
+  background-color: #FF7B52;
+  color: #ffefef;
+  border: none;
+  border-radius: 5px;
+}
+
+.main-buttons .main-about:active {}
+
 .main-center .main-contact {
-  padding: 10px;
+  padding: 15px 40px;
+  gap: 10px;
+  border: 1px solid #FF7B52;
+  color: #ffefef;
+  background: none;
+  border-radius: 5px;
+  transition: .5s;
+}
+
+.main-buttons .main-contact:hover {
+  background: #FF7B52;
 }
 
 .login {
@@ -116,7 +138,7 @@ nav.navbar {
 }
 
 .btn-join {
-  background: #ff7b52;
+  background: #FF7B52;
   font-size: 20px;
   color: #fff;
 }
