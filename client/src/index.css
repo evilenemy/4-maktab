@@ -279,6 +279,19 @@ div.error {
   margin: 20px 0;
 }
 
+.home section.about {
+  width: 100%;
+  background: #26335D;
+  color: #ffefef;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+section.about {}
+
 @media screen and (max-width: 1751px) and (min-width: 1550px) {
   .btn-join {
     padding: 0;

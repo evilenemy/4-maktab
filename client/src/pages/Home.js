@@ -16,6 +16,16 @@ const Home = ({ api }) => {
           </div>
         </div>
       </div>
+      <section className="about">
+        <div className="wrapper">
+          <h3 className="about-theme">About</h3>
+          <h1 className="about-scholl">Bizning maktabimiz haqida</h1>
+          <p className="about-text">
+            Ushbu malumotlar orqali maktabimiz haqida qisqacha ma'lumotga ega
+            bo'lishingiz mumkin.
+          </p>
+        </div>
+      </section>
     </div>
   );
 };
