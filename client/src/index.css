@@ -82,11 +82,14 @@ nav.navbar {
 }
 
 .main .main-center {
-  padding: 30px;
+  width: 570px;
+  height: calc(30vh - 10px);
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-around;
+  text-align: center;
 }
 
 .main-center .main-buttons {
@@ -104,6 +107,11 @@ nav.navbar {
   border: none;
   border-radius: 5px;
   transition: .5s;
+  border: 2px solid #FF7B52;
+}
+
+.main-center .main-about:hover {
+  background: none;
 }
 
 .main-buttons .main-about:active,
@@ -114,7 +122,7 @@ nav.navbar {
 .main-center .main-contact {
   padding: 15px 40px;
   gap: 10px;
-  border: 1px solid #FF7B52;
+  border: 2px solid #FF7B52;
   color: #ffefef;
   background: none;
   border-radius: 5px;
