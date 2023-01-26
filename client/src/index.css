@@ -89,6 +89,16 @@ nav.navbar {
   justify-content: flex-start;
 }
 
+.main-center .main-about {
+  padding: 10px;
+  background-color: #ff7b52;
+  color: #ffefef;
+}
+
+.main-center .main-about {
+  padding: 10px;
+}
+
 .login {
   display: flex;
   margin-left: 350px;
@@ -106,9 +116,7 @@ nav.navbar {
 }
 
 .btn-join {
-  /* margin-left: 30px; */
   background: #ff7b52;
-  /* padding: 10px 15px; */
   font-size: 20px;
   color: #fff;
 }
