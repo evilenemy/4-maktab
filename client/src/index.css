@@ -70,7 +70,6 @@ nav.navbar {
 .home .main {
   width: 100%;
   height: 100vh;
-  background: fixed;
   background: url("https://wallpaperaccess.com/full/2029165.jpg");
   background-position: center;
   background-size: cover;
@@ -78,10 +77,11 @@ nav.navbar {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #ffefef;
+  background-attachment: fixed;
 }
 
 .main .main-center {
-  background: #000;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -103,9 +103,13 @@ nav.navbar {
   color: #ffefef;
   border: none;
   border-radius: 5px;
+  transition: .5s;
 }
 
-.main-buttons .main-about:active {}
+.main-buttons .main-about:active,
+.main-buttons .main-contact:active {
+  transform: scale(0.9);
+}
 
 .main-center .main-contact {
   padding: 15px 40px;
