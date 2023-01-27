@@ -1,4 +1,8 @@
 import React from "react";
+import exam from "../icons/exam.svg";
+import lupa from "../icons/lupa.svg";
+import monitor from "../icons/monitor.svg";
+import ruksack from "../icons/ruksack.svg";
 
 const Home = ({ api }) => {
   return (
@@ -25,7 +29,9 @@ const Home = ({ api }) => {
             ega bo'lishingiz mumkin.
           </p>
           <div className="cards">
-            <div className="card-about"></div>
+            <div className="card-about">
+              <img src="" alt="" />
+            </div>
             <div className="card-about"></div>
             <div className="card-about"></div>
             <div className="card-about"></div>
