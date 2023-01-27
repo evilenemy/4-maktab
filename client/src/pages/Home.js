@@ -24,6 +24,12 @@ const Home = ({ api }) => {
             Ushbu malumotlar orqali maktabimiz <br /> haqida qisqacha ma'lumotga
             ega bo'lishingiz mumkin.
           </p>
+          <div className="cards">
+            <div className="card-about"></div>
+            <div className="card-about"></div>
+            <div className="card-about"></div>
+            <div className="card-about"></div>
+          </div>
         </div>
       </section>
     </div>

@@ -297,23 +297,41 @@ div.error {
 
 .home section.about .wrapper .about-theme {
   display: inline-block;
-  margin-top: 150px;
+  margin-top: 200px;
   color: #8D5CF6;
   font-family: Montoserrat;
+  margin-left: 150px;
 }
 
 .home section.about .wrapper .about-scholl {
   font-family: Montserrat;
   font-weight: 700;
   margin-top: 10px;
+  margin-left: 150px;
 }
 
 .home section.about .wrapper .about-text {
   margin: 0;
+  margin-left: 150px;
 }
 
 .home section.about .wrapper .cards {
-  width: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.home section.about .wrapper .cards div {
+  width: 240px;
+  height: 340px;
+  background: #ffefef;
+}
+
+.home section.about .wrapper .cards div:nth-child(2),
+.home section.about .wrapper .cards div:nth-child(4) {
+  margin-top: 70px;
 }
 
 @media screen and (max-width: 1751px) and (min-width: 1550px) {
