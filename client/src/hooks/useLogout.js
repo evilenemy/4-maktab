@@ -5,7 +5,7 @@ export const useLogout = () => {
 
   const logout = () => {
     // remove user from storage
-    localStorage.removeItem("maktab4_user");
+    localStorage.removeItem("user");
 
     // dispatch logout action
     dispatch({ type: "LOGOUT" });

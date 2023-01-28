@@ -321,17 +321,89 @@ div.error {
   justify-content: space-between;
   margin: 0 auto;
   margin-top: 70px;
+  flex-wrap: wrap;
 }
 
 .home section.about .wrapper .cards div {
   width: 240px;
-  height: 340px;
-  background: #ffefef;
+  height: 310px;
+  background: #fff;
+  padding-left: 35px;
+  padding-top: 40px;
+  padding-right: 7px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  color: #000;
 }
 
 .home section.about .wrapper .cards div:nth-child(2),
 .home section.about .wrapper .cards div:nth-child(4) {
   margin-top: 70px;
+  flex-wrap: nowrap;
+  height: 325px;
+}
+
+.home section.about .wrapper .cards div:nth-child(3) {
+  background: #8D5CF6;
+  color: #fff;
+  opacity: 1;
+}
+
+.cards div h6 {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.cards div hr {
+  width: 50px;
+  height: 2px;
+  background: #e7195a;
+  border: #e7195a;
+  order: 2;
+  flex-grow: 0;
+  margin: 0;
+  opacity: 1;
+  margin-top: 20px;
+}
+
+.home section.about .wrapper .cards div:nth-child(3) hr {
+  background: #fff;
+}
+
+.cards div p {
+  margin-top: 15px;
+  font-style: normal;
+  font-weight: 500;
+  color: #737373;
+}
+
+.home section.about .wrapper .cards div:nth-child(3) p {
+  color: #fff;
+}
+
+.home section.about .wrapper .cards div .about-more {
+  display: inline-block;
+  font-size: medium;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.events {
+  margin-top: 150px;
+  color: #fff;
+}
+
+.events .wrapper .event-theme {
+  display: inline-block;
+  margin-top: 200px;
+  color: #8D5CF6;
+  font-family: Montoserrat;
+  margin-left: 150px;
+}
+
+.events .wrapper .event-text {
+  margin-bottom: 0;
+  margin-left: 150px;
 }
 
 @media screen and (max-width: 1751px) and (min-width: 1550px) {

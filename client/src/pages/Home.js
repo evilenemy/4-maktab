@@ -30,12 +30,57 @@ const Home = ({ api }) => {
           </p>
           <div className="cards">
             <div className="card-about">
-              <img src="" alt="" />
+              <img src={monitor} alt="icons" />
+              <h6>Kutubxona</h6>
+              <hr />
+              <p>
+                Kutubxonamiz katta va kitoblar soni hamma o'quvchilarga yetadi
+              </p>
             </div>
-            <div className="card-about"></div>
-            <div className="card-about"></div>
-            <div className="card-about"></div>
+            <div className="card-about">
+              <img src={lupa} alt="icons" />
+              <h6>Sertifakatlar</h6>
+              <hr />
+              <p>
+                O'quvchilarimiz va o'qituvchilarimizda turli xildagi
+                sertifikatlar mavjud
+              </p>
+              <h4 className="about-more text-primary d-none ">
+                Batafsil {" >"}
+              </h4>
+            </div>
+            <div className="card-about">
+              <img src={exam} alt="icons" />
+              <h6>Kasbga yo'naltirish</h6>
+              <hr />
+              <p>
+                Psixologlarimiz kasb-hunarga yo'naltirish bo'yicha o'quvchilar
+                bilan har kuni ishlashadi
+              </p>
+            </div>
+            <div className="card-about">
+              <img src={ruksack} alt="icons" />
+              <h6>Boshlang'ich ta'lim</h6>
+              <hr />
+              <p>
+                Boshlang'ich ta'limdayoq o'quvchilar bilan psixologlar
+                ishlashadi.
+              </p>
+              <h4 className="about-more text-primary d-none ">
+                Batafsil {" >"}
+              </h4>
+            </div>
           </div>
+        </div>
+      </section>
+      <section className="events">
+        <div className="wrapper">
+          <h3 className="event-theme">Tadbirlar</h3>
+          <h2 className="event-list">Bizda tadbirlar ro'yxati</h2>
+          <p className="event-text">
+            Bizda har oy fan oyliklarida ushbu fan uchun turli xildagi ochiq
+            darslar yoki tadbirlar o'tqaziladi
+          </p>
         </div>
       </section>
     </div>
