@@ -401,8 +401,15 @@ div.error {
   margin-left: 150px;
 }
 
-.events .wrapper .event-text {
-  margin-bottom: 0;
+.home section.about .wrapper .about-scholl {
+  font-family: Montserrat;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-left: 150px;
+}
+
+.home section.about .wrapper .about-text {
+  margin: 0;
   margin-left: 150px;
 }
 
