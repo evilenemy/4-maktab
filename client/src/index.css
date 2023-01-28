@@ -395,23 +395,48 @@ div.error {
 
 .events .wrapper .event-theme {
   display: inline-block;
-  margin-top: 200px;
   color: #8D5CF6;
   font-family: Montoserrat;
   margin-left: 150px;
 }
 
-.home section.about .wrapper .about-scholl {
+.home section.events .wrapper .event-list {
   font-family: Montserrat;
+  font-style: normal;
   font-weight: 700;
   margin-top: 10px;
   margin-left: 150px;
 }
 
-.home section.about .wrapper .about-text {
+.home section.events .wrapper .event-text {
   margin: 0;
   margin-left: 150px;
 }
+
+.home section.events .wrapper .cards {
+  margin: 0 auto;
+  height: 500px;
+  margin-top: 100px;
+  width: 80%;
+}
+
+.home section.events .wrapper .cards .card-event {
+  width: 200px;
+  background: #fff;
+}
+
+.card-event .card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-event .card-body .more-link {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.card-event .card-body h3 {}
 
 @media screen and (max-width: 1751px) and (min-width: 1550px) {
   .btn-join {
