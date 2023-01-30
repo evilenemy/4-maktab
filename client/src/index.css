@@ -1,0 +1,626 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+nav.navbar {
+  width: 100%;
+  height: 91px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  background: none;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.651);
+  backdrop-filter: blur(30px);
+  font-weight: 500;
+}
+
+.brand {
+  margin-left: 300px;
+}
+
+.hamburger-menu {
+  width: 80%;
+  height: calc(100vh - 70px);
+  background: black;
+  display: inline-block;
+  margin-top: 56px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: 0.6s;
+  z-index: 10;
+}
+
+.hamburger-menu.active {
+  transform: translateX(0%);
+}
+
+.hamburger {
+  width: 50px;
+  height: 40px;
+  cursor: pointer;
+  position: relative;
+  margin-top: -3px;
+  display: none;
+}
+
+.nav-links-ul {
+  display: flex;
+  justify-content: space-around;
+  height: 58px;
+  align-items: center;
+  margin-right: 450px;
+}
+
+.nav-links-ul ul {
+  margin-right: 100px;
+}
+
+.home {
+  width: 100%;
+  background: #26335D;
+}
+
+.home .main {
+  width: 100%;
+  height: 100vh;
+  background: url("https://wallpaperaccess.com/full/2029165.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffefef;
+  background-attachment: fixed;
+}
+
+.main .main-center {
+  width: 570px;
+  height: calc(30vh - 10px);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.main-center .main-buttons {
+  width: 70%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-center .main-about {
+  padding: 15px 40px;
+  background-color: #FF7B52;
+  color: #ffefef;
+  border: none;
+  border-radius: 5px;
+  transition: .5s;
+  border: 2px solid #FF7B52;
+}
+
+.main-center .main-about:hover {
+  background: none;
+}
+
+.main-buttons .main-about:active,
+.main-buttons .main-contact:active {
+  transform: scale(0.9);
+}
+
+.main-center .main-contact {
+  padding: 15px 40px;
+  gap: 10px;
+  border: 2px solid #FF7B52;
+  color: #ffefef;
+  background: none;
+  border-radius: 5px;
+  transition: .5s;
+}
+
+.main-buttons .main-contact:hover {
+  background: #FF7B52;
+}
+
+.login {
+  display: flex;
+  margin-left: 350px;
+}
+
+.login-text {
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 400;
+  font-size: 22px;
+  transition: 0.2s;
+}
+
+.login-text:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.btn-join {
+  background: #FF7B52;
+  font-size: 20px;
+  color: #fff;
+}
+
+.btn-join:hover {
+  color: #fff;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .connects {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+}
+
+footer .connects .copyright {
+  color: #000;
+}
+
+footer .connects .copyright a {
+  color: rgba(0, 0, 0, 0.8);
+  transition: 0.4s;
+  text-decoration: none;
+}
+
+footer .connects .copyright a:hover {
+  color: #000;
+}
+
+footer .connects .icons a {
+  font-size: 27px;
+  color: #8d5cf6;
+  margin: 6px;
+}
+
+footer .contacts {
+  width: 100%;
+  height: 270px;
+  background: #26335d;
+  color: #fff;
+  font-weight: 500;
+  display: flex;
+}
+
+footer .contacts div {
+  width: 50%;
+  height: 100%;
+}
+
+footer .contacts .contacts-str {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px 10px;
+}
+
+footer .links .contacts .contacts-str div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 30%;
+}
+
+footer .links .contacts .contacts-str div p {
+  margin: 0;
+  margin-left: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .links .contacts .contacts-str div span {
+  font-size: 23px;
+}
+
+footer .links .contacts .website-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+footer .links .contacts .website-links h4 {
+  margin: 0 auto;
+  margin-top: 3%;
+}
+
+footer .links .contacts .website-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 auto;
+  margin-top: 8px;
+}
+
+.login-form {
+  width: 100%;
+  height: calc(100vh - 340px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form form {
+  width: 30%;
+  margin-top: 30px;
+}
+
+.login-form form button {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid#e7195a;
+  color: #e7195a;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+.home section.about {
+  width: 100%;
+  color: #ffefef;
+
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.home section.about .wrapper .about-theme {
+  display: inline-block;
+  margin-top: 200px;
+  color: #8D5CF6;
+  font-family: Montoserrat;
+  margin-left: 150px;
+}
+
+.home section.about .wrapper .about-scholl {
+  font-family: Montserrat;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-left: 150px;
+}
+
+.home section.about .wrapper .about-text {
+  margin: 0;
+  margin-left: 150px;
+}
+
+.home section.about .wrapper .cards {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 70px;
+  flex-wrap: wrap;
+}
+
+.home section.about .wrapper .cards div {
+  width: 240px;
+  height: 310px;
+  background: #fff;
+  padding-left: 35px;
+  padding-top: 40px;
+  padding-right: 7px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  color: #000;
+}
+
+.home section.about .wrapper .cards div:nth-child(2),
+.home section.about .wrapper .cards div:nth-child(4) {
+  margin-top: 70px;
+  flex-wrap: nowrap;
+  height: 325px;
+}
+
+.home section.about .wrapper .cards div:nth-child(3) {
+  background: #8D5CF6;
+  color: #fff;
+  opacity: 1;
+}
+
+.cards div h6 {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.cards div hr {
+  width: 50px;
+  height: 2px;
+  background: #e7195a;
+  border: #e7195a;
+  order: 2;
+  flex-grow: 0;
+  margin: 0;
+  opacity: 1;
+  margin-top: 20px;
+}
+
+.home section.about .wrapper .cards div:nth-child(3) hr {
+  background: #fff;
+}
+
+.cards div p {
+  margin-top: 15px;
+  font-style: normal;
+  font-weight: 500;
+  color: #737373;
+}
+
+.home section.about .wrapper .cards div:nth-child(3) p {
+  color: #fff;
+}
+
+.home section.about .wrapper .cards div .about-more {
+  display: inline-block;
+  font-size: medium;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.events {
+  margin-top: 150px;
+  color: #fff;
+}
+
+.events .wrapper .event-theme {
+  display: inline-block;
+  color: #8D5CF6;
+  font-family: Montoserrat;
+  margin-left: 150px;
+}
+
+.home section.events .wrapper .event-list {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-left: 150px;
+}
+
+.home section.events .wrapper .event-text {
+  margin: 0;
+  margin-left: 150px;
+}
+
+.home section.events .wrapper .cards {
+  margin: 0 auto;
+  height: 500px;
+  margin-top: 100px;
+  width: 80%;
+}
+
+.home section.events .wrapper .cards .card-event {
+  width: 200px;
+  background: #fff;
+}
+
+.card-event .card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-event .card-body .more-link {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.card-event .card-body h3 {}
+
+@media screen and (max-width: 1751px) and (min-width: 1550px) {
+  .btn-join {
+    padding: 0;
+    width: 110px;
+    height: 55px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .brand {
+    margin-left: 200px;
+  }
+}
+
+@media screen and (max-width: 1750px) and (min-width: 451px) {
+  .brand {
+    margin-left: 50px;
+  }
+
+  .nav-links-ul {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 1220px) and (min-width: 601px) {
+  nav.navbar {
+    height: 70px;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+    width: 55%;
+    font-size: 23px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .brand {
+    margin-left: 5%;
+  }
+
+  .nav-links-ul {
+    display: none;
+  }
+
+  .hamburger-menu ul li {
+    margin: 10px;
+  }
+
+  .hamburger-menu ul li a {
+    color: #fff;
+  }
+
+  .hamburger-menu ul li a:hover {
+    color: #fff;
+  }
+
+  .hamburger-menu ul li:nth-child(1) {
+    margin-top: 50px;
+  }
+
+  .login {
+    margin: 0;
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .login div {
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  footer .contacts {
+    height: calc(100vh - 300px);
+    flex-direction: column;
+  }
+
+  footer .contacts div {
+    width: 100%;
+  }
+
+  footer .contacts .contacts-str {
+    padding: 10px;
+    padding-left: 20px;
+  }
+
+  footer .connects {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer .connects .copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 2%;
+  }
+
+  footer .connects .icons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer .links .contacts .website-links h4 {
+    margin: 0;
+    margin-top: 6%;
+    margin-left: 7%;
+  }
+
+  footer .links .contacts .website-links a {
+    margin: 0;
+    margin-top: 4%;
+    margin-left: 7%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav.navbar {
+    height: 70px;
+  }
+
+  .hamburger-menu {
+    position: fixed;
+    top: 15px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+  }
+
+  .hamburger-menu ul li {
+    margin: 10px;
+  }
+
+  .hamburger-menu ul li a {
+    color: #fff;
+  }
+
+  .hamburger-menu ul li a:hover {
+    color: #fff;
+  }
+
+  .hamburger-menu ul li:nth-child(1) {
+    margin-top: 50px;
+  }
+
+  .hamburger {
+    display: block;
+    margin-right: 4%;
+    margin-top: -1%;
+  }
+
+  .brand {
+    margin-left: 5%;
+  }
+
+  .nav-links-ul {
+    display: none;
+  }
+
+  .login {
+    margin: 0;
+    margin-top: 10%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .login div {
+    margin: 15px;
+  }
+}
