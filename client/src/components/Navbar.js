@@ -26,11 +26,11 @@ const Navbar = ({ user }) => {
     }
   }, []);
 
-  const {logout} = useLogout()
+  const { logout } = useLogout();
 
   const handleClick = () => {
-    logout()
-  }
+    logout();
+  };
 
   return (
     <>
@@ -99,7 +99,9 @@ const Navbar = ({ user }) => {
                 >
                   {user.login}
                 </Link>
-                <button onClick={handleClick} className="btn btn-primary mx-2">Log out</button>
+                <button onClick={handleClick} className="btn btn-primary mx-2">
+                  Log out
+                </button>
               </div>
             ) : (
               <div className="login">

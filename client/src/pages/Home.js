@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Keyboard, Pagination, Navigation } from "swiper";
-import { GrFormNext } from "react-icons/gr";
+import { Link } from "react-router-dom";
 
 const Home = ({ api }) => {
   return (
@@ -94,7 +94,7 @@ const Home = ({ api }) => {
             <div className="card-event"></div>
           </div> */}
           <Swiper
-            slidesPerView={4}
+            slidesPerView={0}
             spaceBetween={10}
             keyboard={{
               enabled: true,
@@ -120,14 +120,9 @@ const Home = ({ api }) => {
                   architecto laboriosam rem eveniet molestiae tempore quia, illo
                   pariatur dolorum illum maiores a!
                 </p>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="more-link"
-                >
+                <Link to={"/"} className="more-link">
                   Batafsil {" >"}
-                </a>
+                </Link>
               </div>
             </SwiperSlide>
             <SwiperSlide className="card-event">Slide 2</SwiperSlide>
