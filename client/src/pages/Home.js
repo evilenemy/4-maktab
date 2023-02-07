@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Keyboard, Pagination, Navigation } from "swiper";
+import { Keyboard, Pagination, Autoplay } from "swiper";
 import { Link } from "react-router-dom";
 
 const Home = ({ api }) => {
@@ -94,16 +94,20 @@ const Home = ({ api }) => {
             <div className="card-event"></div>
           </div> */}
           <Swiper
-            slidesPerView={0}
             spaceBetween={10}
             keyboard={{
               enabled: true,
             }}
             pagination={{
               clickable: true,
+              enabled: true,
             }}
-            navigation={true}
-            modules={[Keyboard, Pagination, Navigation]}
+            autoplay={{
+              delay: 500,
+              disableOnInteraction: false,
+            }}
+            centeredSlides={true}
+            modules={[Keyboard, Pagination, Autoplay]}
             className="mySwiper cards"
           >
             <SwiperSlide className="card-event">
